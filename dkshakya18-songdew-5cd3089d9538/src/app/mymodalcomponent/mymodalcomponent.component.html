@@ -1,0 +1,14 @@
+
+
+
+ <div class="modal-header" style="height: 120px;width: 100%;border: none; justify-content: center; display:inline-flex;padding: 0;text-align: center;">
+  <h4 class="modal-title" style="font-size: 20px;margin-top: 20px;margin-bottom: 10px;text-align: center;;">Let <span style="color:blue;">{{my_modal_title}}</span> Know about winning this <br/> opportunity</h4>
+  <div aria-hidden="true" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')" style="float: right;margin-top: 1%;margin-right: 2%;font-size: 20px;cursor: pointer;">&times;</div>
+</div>
+<div class="modal-body text-center">
+ <form action="#" popup_form>
+  <textarea class="textarea" cols="48" rows="6" style="padding:2%">{{my_modal_content}}</textarea>
+  <span style="padding: 5%;font-weight: 300;">you may change the text of the email if you want Songdew would also notify artist about this award.</span>
+  <button type="button" class="btn send_btn">Send Email</button>
+ </form>
+</div>

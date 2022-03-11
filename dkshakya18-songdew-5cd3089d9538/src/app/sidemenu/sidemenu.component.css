@@ -1,0 +1,111 @@
+
+.menu-labels {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    /* identical to box height */
+    color: #989AA3;
+    font-family: Poppins;
+    margin-right: 10px;
+}
+
+.menu-active{
+    background: #EFF1F6 !important;
+    border-radius: 5px;
+   
+}
+li.menu-div {
+    display: inline-flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px 35px;
+}
+.icon{
+    margin-left: 10px;
+}
+.logo-padding {
+    left: 8.33%;
+    right: 8.33%;
+    top: 8.33%;
+    bottom: 8.33%;
+}
+
+/* .menu-logo{
+    /* height: 12.82295036315918px;
+    width: 18.33502769470215px;
+    left: 0.8291015625px;
+    top: 2.501953125px;
+    border-radius: 0px; 
+
+} */
+
+.mb-logo {
+    text-align: center;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+
+ .highlight {
+    color: black;
+} 
+
+.border-0 {
+    border: 0 !important;
+}
+
+.side_menu_div {
+    /* margin-top:3%; */
+    margin-bottom:3%;
+    /* padding-left: 0; */
+}
+
+.side_menu_icon {
+    align-items: center;margin-bottom: 10%;
+}
+
+.side_menu_logo{
+    padding-left: 0;margin-right:2%;
+}
+.pad_left_0{
+    padding-left: 0;
+}
+
+.mb_menu {
+    margin-bottom:3%;
+    padding:10px;
+    position: absolute;
+    z-index: 9999999;
+    background: white;
+    width: 100%;
+    height:100%;
+    opacity: .99;
+    overflow: scroll;
+}
+
+.mb_menu_div{
+    padding-left: 0;margin-right:2%;display: flex;
+}
+
+
+.desktop-left-mar {
+    padding-left:46px;
+}
+
+@media only screen and (min-width: 320px) and   (max-width: 767px) {
+    .sidebar {
+        top: 50px;
+    }
+}
+@media only screen and (min-width: 768px) and   (max-width: 1450px) {
+li.menu-div {
+    /* padding: 15px 15px; */
+    padding: 15px 0px;
+    padding-left: 26px;
+        }
+    }
+
+  

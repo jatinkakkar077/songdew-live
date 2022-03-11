@@ -1,0 +1,45 @@
+.custom-class {
+    width: 90%;
+    margin: 1%;
+  }
+  textarea:focus {
+    border: 1px solid #f9f8f9 !important;
+    outline: none !important;
+}
+.close{
+  position: absolute;
+    top: 20px;
+    right: 10px;
+    font-size: 30px !important;
+}
+form {
+  display: inline-flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+form textarea{
+  border: 1px solid #E0E3EB;
+box-sizing: border-box;
+border-radius: 8px;
+}
+.send_btn{
+background: #F9F9F9;
+box-shadow: -5px -5px 10px #FFFFFF, 4px 5px 10px rgba(216, 218, 225, 0.7);
+border-radius: 8px;
+font-weight: 600;
+font-size: 14px;
+display: flex;
+width: 169px;
+height: 49px;
+justify-content: center;
+align-items: center;
+text-align: center;
+text-transform: capitalize;
+color: #3D67FF;
+}
+button.send_btn:focus{
+  background: #F9F9F9;
+  box-shadow: -5px -5px 10px #FFFFFF, 4px 5px 10px rgba(216, 218, 225, 0.7);
+  border-radius: 8px;
+}

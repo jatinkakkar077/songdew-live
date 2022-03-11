@@ -1,0 +1,38 @@
+<nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse pt-0">
+    <div class="position-sticky pt-3">
+        <div class="row">
+            <ul class="nav flex-column side_menu_div">
+                <li><img src="../assets/img/logo.png" alt="logo" width="150" class="logo side_menu_icon d-xs-none" style="margin-left: 15%;"></li>
+                <li *ngFor="let item of menu"  [ngClass]="item.active ? 'menu-div menu-active':'menu-div'">
+                    <div class="col-lg-10 col-md-10 pad_left_0" style="padding-right: 0;
+                    padding-left: 0;">
+                      <img src="../assets/img/{{item.icon}}" class="menu-logo logo-padding" alt="logo" style="align-items: center;"/>
+                        <span [ngClass]="item.active ? 'menu-labels highlight' : 'menu-labels'"  style="font-size:13px;padding-left: 12px;">{{item.name}}</span>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 side_menu_logo" >
+                        <div *ngIf="item.subMenu" class="icon" >
+                            <img src="../assets/img/arrow.png" alt="arrow"/>
+                        </div>
+                    </div>
+                    
+               
+                </li>
+            </ul>
+            
+        </div>
+        
+        <ul *ngIf="menuShow" class="mb_menu nav flex-column">
+            <li *ngFor="let item of menu"  [ngClass]="item.active ? 'menu-div menu-active':'menu-div nav-item'">
+                <a class="col-lg-2 col-md-2 col-sm-2 col-2 nav-link  mb_menu_div" href="#">
+                    <div [ngClass]="item.active ? 'menu-labels highlight' : 'menu-labels'" style="width: 100%;">
+                        <img src="../assets/img/{{item.icon.split('.')[0]}}_mb.{{item.icon.split('.')[1]}}" class="menu-logo logo-padding d-none d-sm-block" alt="logo" style="align-items: center;color: #3D67FF;
+                        padding:10px;width:35px;"/>
+                        <label style="color:black;line-height: .75;vertical-align: text-bottom;padding-left: .5rem;;
+                        margin-right: .5rem;">{{item.name}}</label>
+                        <div><img style="float:right;margin-right: .1rem;padding-top:1.2rem;" src="../assets/img/dwn_arrow.png" alt="arrow"/></div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+  </nav>
