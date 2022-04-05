@@ -37,11 +37,11 @@ export class OpportunityDetailComponent implements OnInit {
   customclass:any;
 
   opportunitydetaillist = [
-      {submissionImage:"bg.png", submissionName:"Dhuriti",submissiondesc:"Brito",submissioncontact:"Contact",date:"12 Dec 2020",time:"1:31pm",status:"Award Offered",thumb1:"1",thumb2:"0"},
-      {submissionImage:"si2.png", submissionName:"Shina Ta Re",submissiondesc:"Sona",submissioncontact:"Contact",date:"12 Dec 2020",time:"1:31pm",status:"Extend Award",thumb1:"2",thumb2:"3"},
-      {submissionImage:"si3.png", submissionName:"Something",submissiondesc:"Tai",submissioncontact:"Contact",date:"12 Dec 2020",time:"1:31pm",status:"Extend Award",thumb1:"5",thumb2:"3"},
-      {submissionImage:"si4.png", submissionName:"Bla Bla So",submissiondesc:"yyi",submissioncontact:"Contact",date:"12 Dec 2020",time:"1:31pm",status:"Extend Award",thumb1:"5",thumb2:"4"},
-      {submissionImage:"si5.png", submissionName:"Blao Si",submissiondesc:"Backs",submissioncontact:"Contact",date:"12 Dec 2020",time:"1:31pm",status:"Extend Award",thumb1:"5",thumb2:"4"},
+      {submissionImage:"bg.png", submissionName:"Dhuriti",submissiondesc:"Brito",submissioncontact:"Contact",date:"12 Dec 2020",time:"1:31pm",status:"Award Offered",thumb1:"0",thumb2:"1",showContactPopover:false},
+      {submissionImage:"si2.png", submissionName:"Shina Ta Re",submissiondesc:"Sona",submissioncontact:"Contact",date:"12 Dec 2020",time:"1:31pm",status:"Extend Award",thumb1:"2",thumb2:"3",showContactPopover:false},
+      {submissionImage:"si3.png", submissionName:"Something",submissiondesc:"Tai",submissioncontact:"Contact",date:"12 Dec 2020",time:"1:31pm",status:"Extend Award1",thumb1:"2",thumb2:"5",showContactPopover:false},
+      {submissionImage:"si4.png", submissionName:"Bla Bla So",submissiondesc:"yyi",submissioncontact:"Contact",date:"12 Dec 2020",time:"1:31pm",status:"Extend Award1",thumb1:"4",thumb2:"5",showContactPopover:false},
+      {submissionImage:"si5.png", submissionName:"Blao Si",submissiondesc:"Backs",submissioncontact:"Contact",date:"12 Dec 2020",time:"1:31pm",status:"Extend Award1",thumb1:"4",thumb2:"5",showContactPopover:false},
     // {submissionImage:"bg1.png", submissionName:"Dhuriti",submissiondesc:"Brito",submissioncontact:"Contact",date:"12 Dec 2020 1:31pm",status:"Award Offered"},
   ]
 
@@ -66,8 +66,15 @@ export class OpportunityDetailComponent implements OnInit {
     //   this.closeResult = `Closed with: ${result}`;
     // }, (reason) => {
     //   this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
-    // });
+    // })
   }
+    setPopoverPosition(content: any) {
+      const el = document.getElementById("ngb-popover-0");
+      console.log("sas : " + el);
+      if(el)
+      el.style.cssText += "left:65px;";
+      // ngb-popover-0
+    }
 
   private getDismissReason(reason: any): string {
     if (reason === ModalDismissReasons.ESC) {
@@ -96,3 +103,5 @@ export class OpportunityDetailComponent implements OnInit {
   }
 
 }
+
+

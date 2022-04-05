@@ -1,85 +1,193 @@
 <app-sidemenu></app-sidemenu>
 <app-app-header></app-app-header>
-<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3">
-    <div [ngClass]="{'dsk-mar-top':isTabletMode}" style="color: #989AA3; font-size: 11px;">
-      <img   class=""   src="../assets/img/u-arrow-right-1.png"   />
-      <span [hidden]="isTabletMode || isMobileView" class="" routerLink="/opportunitylist">Back to Home Page</span>
-      <span [hidden]="isDesktopMode " class="" routerLink="/opportunitylist">Go Back</span>
-    </div>
-    <div class="btn-toolbar mb-2 mb-md-0 d-none d-md-block">
-      <div>      
-        <img
-          class="search-comment-notification"
-          src="../assets/img/search-comment-notification-1.png"
-        />
-        <img
-          class=""
-          src="../assets/img/fi-chevron-down-1.png"
-        />
-        <img style="margin-left: 1rem;"
-          class="divider"
-          src="../assets/img/divider-2.png"
-        />
-        <img style="margin-left: 1rem;"
-        class=""
-        src="../assets/img/photo-1.png"
-        />
+<main class="col-md-9 ms-sm-auto col-lg-10 main-content">
+  <div class="main-container">
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center">
+
+      <div [ngClass]="{'dsk-mar-top':isTabletMode}" style="color: #989AA3; font-size: 11px;">
+        <img   class=""   src="../assets/img/u-arrow-right-1.svg"   style="margin-right:10px;"/>
+        <span [hidden]="isTabletMode || isMobileView" class="" routerLink="/opportunitylist">Back to Home Page</span>
+        <span [hidden]="isDesktopMode " class="" routerLink="/opportunitylist">Go Back</span>
       </div>
-    </div>
+
+      <div class="btn-toolbar mb-2 mb-md-0 d-none d-md-block">
+        <div>      
+          <img
+            class="search-comment-notification"
+            src="../assets/img/search-comment-notification-1.svg"
+          />
+          <img
+            class=""
+            src="../assets/img/fi-chevron-down-1.png"
+          />
+          <img style="margin-left: 1rem;"
+            class="divider"
+            src="../assets/img/divider-2.png"
+          />
+          <img style="margin-left: 1rem;"
+          class=""
+          src="../assets/img/photo-1.png"
+          />
+        </div>
+      </div>
+
   </div>
-   <section class="main_section">
+
+   <section class="main_section" [hidden]="!isDesktopMode">
     <div class="main_head">
-      <h1>Listing of Opportunity</h1>
+      <h1 class="heading">Listing of Opportunity</h1>
     </div>
     <div class="link_tabs row">
       <div class="col link_btn">
         <a href="#">
           <img
             class="utrophy"
-            src="../assets/img/u-trophy-1.png"
+            src="../assets/img/u-trophy-1.svg"
           />
             <span>Total Opportunities Created 4</span>
         </a>
         <a href="#" class="focused">
           <img
-            class="utrophy"
-            src="../assets/img/u-trophy-1.png"
+            class="utrophy" 
+            src="../assets/img/u-trophy-2.svg"
           />
-            <span>Active New Opportunities 2</span>
+            <span class="sub_btn_font1">Active New Opportunities 2</span>
         </a>
         <a href="#" class="active">
-            <span>Submit New Opportunity</span>
+            <span class="sub_btn_font" style="font-family: Poppins;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 21px;
+            letter-spacing: 0em;
+            text-align: center;
+            ">Submit New Opportunity</span>
         </a>
       </div>
     </div>
    </section>
+
+   <section class="main_section" [hidden]="!isMobileView">
+    <div class="main_head">
+      <h1 class="heading">Listing of Opportunity</h1>
+    </div>
+    <div class="link_tabs row">
+      <div class="col link_btn">
+        <a href="#" class="active">
+          <span class="sub_btn_font" style="font-family: Poppins;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 21px;
+          letter-spacing: 0em;
+          text-align: center;
+          ">Submit New Opportunity</span>
+      </a>
+        <a href="#" style="    min-width: 210px;">
+          <img
+            class="utrophy"
+            src="../assets/img/u-trophy-1.svg"
+          />
+            <span>Total Opportunities Created 4</span>
+        </a>
+        <a href="#" class="focused">
+          <img
+            class="utrophy" 
+            src="../assets/img/u-trophy-2.svg"
+          />
+            <span class="sub_btn_font1">Active New Opportunities 2</span>
+        </a>
+       
+      </div>
+    </div>
+   </section>
+
+   <section class="main_section" [hidden]="!isTabletMode">
+    <div class="main_head">
+      <h1 class="heading">Listing of Opportunity</h1>
+    </div>
+    <div class="link_tabs row">
+      <div class="col link_btn">
+        
+        <a href="#" style="    min-width: 220px;">
+          <img
+            class="utrophy"
+            src="../assets/img/u-trophy-1.svg"
+          />
+            <span style="font-family: Poppins;
+            font-size: 11px;
+            font-weight: 500;
+            line-height: 15px;
+            letter-spacing: 0px;
+            text-align: left;
+            ">Total Opportunities Created 4</span>
+        </a>
+        <a href="#" class="active" style="margin-right:0px;    min-width: 200px;">
+          <span class="sub_btn_font" style="font-family: Poppins;
+          font-size: 12px;
+          font-weight: 600;
+          line-height: 18px;
+          letter-spacing: 0em;
+          text-align: left;
+          
+          
+          ">Submit New Opportunity</span>
+      </a>
+        <a href="#" class="focused">
+          <img
+            class="utrophy" 
+            src="../assets/img/u-trophy-2.svg"
+          />
+            <span class="sub_btn_font1" style="font-family: Poppins;
+            font-size: 11px;
+            font-weight: 500;
+            line-height: 15px;
+            letter-spacing: 0px;
+            text-align: left;
+            ">Active New Opportunities 2</span>
+        </a>
+       
+      </div>
+    </div>
+   </section>
+
    <section class="opportuntylist">
-    <div class="row" style="margin-bottom:0rem;font-family: Poppins;font-size: 12px; border-bottom: 1px solid #E0E3EB;padding: 20px 0;    max-width: 1100px;">
-      <div class="col-lg-6 col-md-6" [ngClass]="{'desktop-width' : isDesktopMode == true}" style="color: #A8ABBB;text-align: left;">
+     <div class="opportuntylist-grid">
+
+    <div class="row">
+      <div class="col-lg-5 col-md-7" [ngClass]="{'desktop-width' : isDesktopMode == true}" style="color: #A8ABBB;text-align: left;">
       List of Opportunities
       </div>
       <div  class="col-lg-2  list_date" style="color: #A8ABBB;text-align: left">Publishing Date</div>
-      <div  class="col  list_status" style="color: #A8ABBB;text-align: left">Status</div>
-      <div  class="col" style="color: #A8ABBB;text-align: left" >Result</div>
-      <div  class="col" style="color: #A8ABBB;text-align: left" ></div>
+      <div  class="col-lg-1  list_status" style="color: #A8ABBB;text-align: left">Status</div>
+      <div  class="col-lg-3 col-md-5" style="color: #A8ABBB;text-align: left;" [ngClass]="{'padding-50' : isDesktopMode}" >Result</div>
+      <div  class="col-lg-1" style="color: #A8ABBB;text-align: left" ></div>
 
     </div> 
-    <div class="row" routerLink="/opportunity-detail" class="opp_row max-width row_bg_color cursor" *ngFor="let row of opportunitylist; let rowindex = index">
+    </div>
+    
+    <div class="row" routerLink="/opportunity-detail" class="opp_row row_bg_color cursor" *ngFor="let row of opportunitylist; let rowindex = index">
       
-      <div [hidden]="rowindex == 0" class="col-lg-6 col-md-7 col-sm-8 col-12 " [ngClass]="{'desktop-width' : isDesktopMode == true}">
+      <div [hidden]="rowindex == 0" class="col-lg-5 col-md-7 col-sm-8 col-12 " [ngClass]="{'desktop-width' : isDesktopMode == true}">
         <div class="row"  [ngClass]="{'pad-left-0 ':isMobileView ,'mb-height':isMobileView || isTabletMode }" style="padding:.6rem;vertical-align: middle;line-height: 20px;height: 73px;" >
          <div [hidden]="rowindex == 0 || isMobileView" class="col-lg-2 col-md-2 col-sm-2 col-2">
             <!-- <span class="col-lg-2 col-md-2 col-sm-2 col-xs-2"> <img class="image" src="../assets/img/{{row.image}}" /></span> -->
-            <img class="image" [ngClass]="{'mar-right-5': isMobileView == true}" src="../assets/img/{{row.image}}" />
+            <img class="image" [ngClass]="{'mar-right-5': isMobileView == true,'tablet_img':isTabletMode}" src="../assets/img/{{row.image}}" />
             <span [hidden]="!isMobileView" class="header-text mb-view" >{{row.header}}</span>
             <span [hidden]="!isMobileView" class="view-btn" style="margin-left:5%;float: right;">{{row.btntext}}</span>
             <span [hidden]="!isMobileView" class="header-detail mb-view" style="margin-top: 6%;">{{row.detail}}</span>
             <div [hidden]="!isMobileView" style="margin-left: 18%;margin-top:2%">
-              <span [hidden]="row.stage =='Closed'" class="status-btn" style="margin-right: 3%;;">{{row.stage}}</span>
+              <span [hidden]="row.stage =='Closed'" class="status-btn" style="margin-right: 3%;">{{row.stage}}</span>
               <span [hidden]="row.stage =='Open'" class="status-btn" style="margin-right: 3%;;">{{row.stage}}</span>
-              <span style="margin-right: 3%;;">{{row.date}}</span>
-              <span>{{row.status}}</span>
+              <span style="margin-right: 3%;font-family: Poppins;
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 20px;
+              letter-spacing: 0px;
+              text-align: left;
+              ;">{{row.date}}</span>
+              <span >{{row.status}}</span>
             </div>
            
           </div>
@@ -88,52 +196,104 @@
               <div class="col-2">
                 <img class="image"  src="../assets/img/{{row.image}}" />
               </div>
-              <div class="col-9" style="padding-left: 8%;">
-                  <div style="margin-bottom: 5%;font-size: 14px;font-weight: 500;">{{row.header}}</div>
-                  <div style="margin-bottom: 5%;font-size: 12px;;">{{row.detail}}</div>
+              <div class="col-9 pad-8">
+                  <div style="margin-bottom: 5%;font-size: 14px;font-weight: 500; width: 97%;overflow: hidden; white-space: nowrap;
+                  text-overflow: ellipsis;">{{row.header}}</div>
+                  <div style="margin-bottom: 5%;font-size: 12px;">{{row.detail}}</div>
                   
               </div>
               <div class="col-1" style="margin-left:-35px;">
-                <div class="view-btn">{{row.btntext}}</div>
+                <div class="view-btn" style="margin-left: 5px;">{{row.btntext}}</div>
               </div>
             </div>  
             <div class="row" >
               <div class="col-2"></div>
-              <div  class="col-10" style="font-size: 12px;padding-left: 8%;">
+              <div  class="col-10 pad-8" style="font-size: 12px;">
                 <span class="status-btn" style="margin-bottom: 2%;">Open</span>
-                <span style="padding-right: 3%;padding-left: 3%;color: #787878;">{{row.date}}</span>
-                <span>{{row.status}}</span>
+                <span style="padding-right: 3%;padding-left: 3%;color: #787878;font-family: Poppins;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px;
+                letter-spacing: 0px;
+                text-align: left;
+                
+                ">{{row.date}}</span>
+                <span >{{row.status}}</span>
               </div>
             </div>
           </div>
           <div [hidden]="isMobileView" class="col-lg-9 col-md-10 col-sm-8 col-xs-8 " style="margin: 0px;padding-left: 20px;">
-            <p style="margin: 0px;"><span class="header-text">{{row.header}}</span></p>
-            <p style="margin: 0px;"><span class="header-detail">{{row.detail}}</span></p>
+            <p style="margin: 0px;"><span class="header-text" style="font-family: Poppins;
+              font-size: 13px;
+              font-weight: 500;
+              line-height: 22px;
+              letter-spacing: 0px;
+              text-align: left;
+              ">{{row.header}}</span></p>
+            <p style="margin: 0px;font-family: Poppins;
+            font-size: 11px;
+            font-weight: 400;
+            line-height: 19px;
+            letter-spacing: 0px;
+            text-align: left;
+            "><span class="header-detail">{{row.detail}}</span></p>
             <div [hidden]="isDesktopMode" class="row">
-              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
-                <div [ngClass]="row.stage =='Open'  ? 'status-btn':'status-btn-close'" >
-                  <span [hidden]="row.stage =='Closed'" class="">{{row.stage}}</span>
-                  <span [hidden]="row.stage =='Open'" class="">{{row.stage}}</span>
+              <div class="col-lg-4 col-md-3 col-sm-6 col-xs-6">
+                <div [ngClass]="row.stage =='Open'  ? isTabletMode ? 'status-btn status-btn-open-tablet' : 'status-btn' : isTabletMode ? 'status-btn-close status-btn-close-tablet' : 'status-btn-close'" >
+                  <span [hidden]="row.stage =='Closed'" [ngClass]="{'open-close-tablet':isTabletMode, 'open-close': isDesktopMode || isMobileView}" >{{row.stage}}</span>
+                  <span [hidden]="row.stage =='Open'"  [ngClass]="{'open-close-tablet':isTabletMode, 'open-close': isDesktopMode || isMobileView}" >{{row.stage}}</span>
               </div>
               </div>
-              <div class="col-lg-8 col-md-8 col-sm-6 col-xs-6" style="margin-top:2%;color: #787878;">
-                <span>{{row.date}}</span>
+              <div class="col-lg-8 col-md-8 col-sm-6 col-xs-6" style="margin-top:1%;color: #787878;">
+                <span [ngClass]="{'date-tablet' : isTabletMode, 'date':isDesktopMode || isMobileView}">{{row.date}}</span>
               </div>
             </div> 
           </div>
         </div>
       </div>
-      <div  [hidden]="rowindex == 0 || !isDesktopMode || isMobileView" class="col-lg-2 col-md-4 col-sm-2 col-xs-2"  style="height: 90%;color: #787878;">{{row.date}}</div>
-      <div  [hidden]="rowindex == 0 || !isDesktopMode || isMobileView" class="col-lg-1 col-md-4 col-sm-2 col-xs-2"  style="height: 90%;">
+
+      <div  [hidden]="rowindex == 0 || !isDesktopMode || isMobileView" class="col-lg-2 col-md-4 col-sm-2 col-xs-2 px-2"  style="height: 90%;color: #787878;font-family: Poppins;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0px;
+      text-align: left;
+      ">{{row.date}}</div>
+      
+      <div  [hidden]="rowindex == 0 || !isDesktopMode || isMobileView" class="col-lg-1 col-md-4 col-sm-2 col-xs-2 px-2"  style="height: 90%;">
         <div [ngClass]="row.stage =='Open'  ? 'status-btn':'status-btn-close'" >
           <div class="">
-            <span [hidden]="row.stage =='Closed'"><span class="">{{row.stage}}</span> </span>
-            <span [hidden]="row.stage =='Open'"><span class="">{{row.stage}}</span> </span>
+            <span [hidden]="row.stage =='Closed'"><span class="" style="font-family: Poppins;
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 18px;
+              letter-spacing: 0px;
+              text-align: left;
+              ">{{row.stage}}</span> </span>
+            <span [hidden]="row.stage =='Open'"><span class="" style="font-family: Poppins;
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 18px;
+              letter-spacing: 0px;
+              text-align: left;
+              ">{{row.stage}}</span> </span>
           </div>
         </div>
-        </div>
-      <div [hidden]="rowindex == 0 || isMobileView" class="col-lg-2 col-md-3 col-sm-2 col-xs-2 "  style="height: 90%;color: #787878;">{{row.status}}</div>
-      <div [hidden]="rowindex == 0 || isMobileView" class="col-lg-1 col-md-1 col-sm-2 col-xs-2"  style="height: 90%;">
+      </div>
+
+      <div [hidden]="rowindex == 0 || isMobileView" class="col-lg-3 col-md-4 col-sm-2 col-xs-2 px-3"  [ngClass]="{'padding-50' : isDesktopMode}" style="height: 90%;color: #787878;font-family: Poppins;
+      font-size: 11px;
+      font-weight: 400;
+      line-height: 19px;
+      letter-spacing: 0px;
+      text-align: left;
+      ">{{row.status}}</div>
+     
+      <div [hidden]="rowindex == 0 || isMobileView" class="col-lg-1 col-md-1 col-sm-2 col-xs-2 px-2"  style="height: 90%;">
         <div class="view-btn"  >
         <div class="">
           <span><span class="">{{row.btntext}}</span> </span>
@@ -141,6 +301,9 @@
       </div>
     </div>
     </div>
-   </section>
 
+     
+   </section>
+   
+  </div>
 </main>

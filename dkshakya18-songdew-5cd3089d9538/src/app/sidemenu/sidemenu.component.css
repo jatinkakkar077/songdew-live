@@ -1,36 +1,36 @@
 
-.menu-labels {
+/* .menu-labels {
     font-family: Poppins;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 21px;
-    /* identical to box height */
+    line-height: 21px; 
     color: #989AA3;
     font-family: Poppins;
     margin-right: 10px;
-}
+} */
 
 .menu-active{
     background: #EFF1F6 !important;
     border-radius: 5px;
    
 }
-li.menu-div {
+/* li.menu-div {
     display: inline-flex;
     width: 100%;
     justify-content: flex-start;
     align-items: center;
     padding: 15px 35px;
-}
+} */
 .icon{
     margin-left: 10px;
 }
 .logo-padding {
-    left: 8.33%;
+    /* left: 8.33%;
     right: 8.33%;
     top: 8.33%;
-    bottom: 8.33%;
+    bottom: 8.33%; */
+    vertical-align: middle;
 }
 
 /* .menu-logo{
@@ -95,13 +95,36 @@ li.menu-div {
     padding-left:46px;
 }
 
+/* new css starts here */
+
+.sidebar-menu .brand-logo {margin-top: 53px; margin-left: 45px; margin-bottom: 40px;}
+.sidebar-menu .brand-logo img {margin-bottom: 0px;}
+.sidebar-menu ul {padding: 0px;}
+.sidebar-menu ul li {padding: 15px 40px 15px 45px; cursor: pointer;}
+.sidebar-menu ul li .title .menu-labels {font-weight: 400; vertical-align: middle; padding-left: 20px; font-size: 14px; line-height: 21px; color: #989AA3;}
+.sidebar-menu ul li .title {float: left;}
+.sidebar-menu ul li .arrow-icon {float: right;}
+.sidebar {width: 296px;}
+
+/* new css end here */
+
+
+
 @media only screen and (min-width: 320px) and   (max-width: 767px) {
     .sidebar {
         top: 50px;
     }
 }
+
+@media only screen and (min-width: 768px) and   (max-width: 992px) {
+    .sidebar {width: 220px;}
+    .sidebar-menu .brand-logo {margin-left: 20px;}
+    .sidebar-menu  ul li {padding: 15px 15px 15px 15px;}
+    .sidebar-menu ul li .title .menu-labels {font-size: 13px;}
+}
+
 @media only screen and (min-width: 768px) and   (max-width: 1450px) {
-li.menu-div {
+.menu-div {
     /* padding: 15px 15px; */
     padding: 15px 0px;
     padding-left: 26px;

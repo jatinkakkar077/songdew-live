@@ -7,17 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidemenuComponent implements OnInit {
   menu = [
-    {name:"Dashboard", icon:"Vector.png", active:false, subMenu: false},
-    {name:"Upload", icon:"fi_upload-cloud.png", active:false, subMenu: false},
-    {name:"Opportunity", icon:"opportunity.png", active:true, subMenu: false},
-    {name:"Promote", icon:"promote.png", active:false, subMenu: false},
-    {name:"Broardcast video", icon:"fi_film.png", active:false, subMenu: true},
-    {name:"My Songdew", icon:"S.png", active:false, subMenu: true},
-    {name:"My Music", icon:"fi_headphones.png", active:false, subMenu: true},
-    {name:"Profile", icon:"profile.png", active:false, subMenu: true},
-    {name:"Songdew TV", icon:"fi_tv.png", active:false, subMenu: false},
-    {name:"Blog", icon:"blog.png", active:false, subMenu: false},
-    {name:"Discover", icon:"discover.png", active:false, subMenu: true},
+    {name:"Dashboard", icon:"Vector.svg", active:false, subMenu: false},
+    {name:"Upload", icon:"fi_upload-cloud.svg", active:false, subMenu: false},
+    {name:"Opportunity", icon:"opportunity.svg", active:true, subMenu: false},
+    {name:"Promote", icon:"promote.svg", active:false, subMenu: false},
+    {name:"Broardcast video", icon:"fi_film.svg", active:false, subMenu: true},
+    {name:"My Songdew", icon:"S.svg", active:false, subMenu: true},
+    {name:"My Music", icon:"fi_headphones.svg", active:false, subMenu: true},
+    {name:"Profile", icon:"profile.svg", active:false, subMenu: true},
+    {name:"Songdew TV", icon:"fi_tv.svg", active:false, subMenu: false},
+    {name:"Blog", icon:"blog.svg", active:false, subMenu: false},
+    {name:"Discover", icon:"discover.svg", active:false, subMenu: true},
   ];
   isMobileView =  false;
   menuShow = false;

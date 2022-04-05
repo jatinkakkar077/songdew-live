@@ -1,7 +1,8 @@
 <app-sidemenu></app-sidemenu>
 <app-app-header></app-app-header>
-<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3">
+<main class="col-md-9 ms-sm-auto col-lg-10 main-content">
+  <div class="main-container" style="padding: 30px 50px 30px 45px;">
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3">
     <div [ngClass]="{'dsk-mar-top':isTabletMode}" style="color: #989AA3; font-size: 11px;">
       <img   class=""   src="../assets/img/u-arrow-right-1.png"   />
       <span [hidden]="isTabletMode || isMobileView" class="" routerLink="/opportunitylist">Back to Home Page</span>
@@ -11,55 +12,74 @@
       <div>      
         <img
           class="search-comment-notification"
-          src="../assets/img/search-comment-notification-1.png"
+          src="../assets/img/search-comment-notification-1.svg"
         />
         <img
           class=""
-          src="../assets/img/fi-chevron-down-1.png"
+          src="../assets/img/fi-chevron-down-1.svg"
         />
-        <img style="margin-left: 1rem;"
-          class="divider"
-          src="../assets/img/divider-2.png"
-        />
-        <img style="margin-left: 1rem;"
+       
+        <img style="margin-left: 1rem;background: url(david-hinkle-kZbLcsYHJE0-unsplash.jpg);
+        border-radius: 25px;"
         class=""
-        src="../assets/img/photo-1.png"
+        src="../assets/img/photo-1.svg"
         />
+        <img style="margin-left: 1rem;"
+        class="divider"
+        src="../assets/img/divider-2.svg"
+      />
       </div>
     </div>
   </div>
 
+   
+
    <section class="main_details">
-    <div class="row">
-      <div class="col-lg-1 col-md-2 col-sm-3 col-3" style="max-width: 110px;">
+
+    <div class="header-section">
+      <div class="brand-logo">
         <img class=""  [ngClass]="{'mar-right-5': isMobileView == true, 'dsk-img-width' : isDesktopMode || isMobileView}" src="../assets/img/image-5.png" />
-        
       </div>
-      <div class="col-lg-11 col-md-10 col-sm-9 col-9">
+      <div class="header-contet" style="width: 100%;">
         <div class="header-text" style="margin-left:0rem;font-size:16px;    padding-left: 2%;">
           Get your songs heard across MG Motors Outlets
       </div>
-      <div style="margin-left:0rem;padding-left: 2%;color: #989AA3;font-size:12px;padding-top: 5px;;">
+      <div style="margin-left:0rem;padding-left: 2%;color: #989AA3;font-size:12px;padding-top: 8px;;">
           Submission closed on 15 Feb 2021, Type - Partner Managed
       </div>
-      <div  style="padding-top: 0%;;padding-left: 2%;">
-          <span class="status-btn" >Open</span>
+      <div  style="padding-top: 8px;padding-bottom: 0px;;padding-left: 2%;">
+          <span class="status-btn" style="
+          border-radius: 5px;
+          font-size: 12px;;
+          padding:2px 8px 2px 8px;
+          ">Open</span>
           <span class="group-2156" style="margin-left:1%;padding:10px 10px 10px 10px">
               <span class="">
                 <img
-                class="utrophy" style="padding-left: 2px;height: 18px; margin-top: -3px;"
-                src="../assets/img/u-trophy-1.png"
+                class="utrophy" style="padding-left: 2px;height: 18px; margin-top: -3px;height: 16px;"
+                src="../assets/img/u-trophy-1.svg"
               />
-                <span class="total-opportunities-created-4" style="padding-left:1%">No of Awards 2</span>
+                <span class="total-opportunities-created-4" style="padding-left:1%;font-family: Poppins;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 17px;
+                letter-spacing: 0px;
+                text-align: left;
+                
+                ">No of Awards 2</span>
               </span>
           </span>
       </div>
-      <div style="padding-top: 0%;;padding-left: 2%;color: #989AA3;font-size: 12px;">
+ 
+      <div style="padding-top: 8px;padding-left: 2%;color: #989AA3;font-size: 12px;">
           Awards will be declared by 20, Feb  2021
       </div>
       </div>
     </div>
+
    </section>
+
+
    <section class="filters">
     <div class="btn-group filters_list" role="group">
       <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
@@ -71,31 +91,31 @@
       <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
       <label class="btn btn-outline-primary" for="btnradio3"><img
         class="thumbs-up"
-        src="../assets/img/thumbs-up-1.png"
+        src="../assets/img/thumbs-up-1.svg"
         /> Like (2)</label>
       <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
       <label class="btn btn-outline-primary" for="btnradio4"> <img
-        src="../assets/img/thumbs-down-1.png"
+        src="../assets/img/thumbs-down-1.svg"
         />Dislike (2)</label>
       <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off">
       <label class="btn btn-outline-primary" for="btnradio5"><img
-        src="../assets/img/utrophy-1.png"
+        src="../assets/img/utrophy-1.svg"
       /> Awards(0)</label>
     </div>
    </section>
    <section class="list_details  d-none d-sm-block">
-    <div class="row"  style="color: #A8ABBB;margin-bottom: 10px;">
+    <div class="row"  style="color: #A8ABBB;margin-bottom: 17px;">
       <div class="col">
       <div class="thead">
-        <span>Sr No.</span>
-        <span>Submission</span>
+        <span class="titlefont">Sr No.</span>
+        <span class="titlefont">Submission</span>
       </div>
       </div>
       <div class="col">
         <div class="sort">
           <span>Sort by:</span>
         <select style="border: 0;background: transparent;" [ngClass]="{'mar-left-10':!isMobileView}">
-          <option>Date of Submission</option>
+          <option class="filter">Date of Submission</option>
         </select>
         </div>
       </div>
@@ -103,23 +123,145 @@
    </section>
 
    <section class="list_table">
-    <div class="row" *ngFor="let row of opportunitydetaillist ;let rowindex = index">
-     <div class="col-12 main_table_row">
+
+    <div class="row " *ngFor="let row of opportunitydetaillist ;let rowindex = index">
+      <div class="col-12 main_table_row" [ngClass]="{'' : isDesktopMode == true}" >
+
+        <ul>
+          <li class="m-0">
+            <div class="sr_no">
+              <p class="index_pad">{{rowindex+1}}
+              </p>
+            </div>
+          </li> 
+          <li>
+            <div class="img_tile title_minwidth"  >
+              <img class="image" style="border-radius: 8px;"  [ngClass]="{'mar-right-5': isMobileView == true}" src="../assets/img/{{row.submissionImage}}" />
+                <div class="img_text">
+                  <div class="title" style="font-family: Poppins;
+                  font-size: 14px;
+                  font-weight: 500;
+                  line-height: 24px;
+                  letter-spacing: 0px;
+                  text-align: left;
+                  "> {{row.submissionName}}</div>
+                  <div class="subtitle" style="font-family: Poppins;
+                  font-size: 14px;
+                  font-weight: 400;
+                  line-height: 24px;
+                  letter-spacing: 0px;
+                  text-align: left;
+                  ">{{row.submissiondesc}}</div>
+                  <div [hidden]=" isDesktopMode" class="col-lg-3 col-md-3 datetime">{{row.date}} {{row.time}}</div>
+                  
+                  <div [hidden]="row.submissioncontact == 'NA'">
+                    <div class="contact_btn" >
+                      <button type="button" placement="bottom-end"
+                             (click)="row.showContactPopover = !row.showContactPopover">
+                            <span>{{row.submissioncontact}}</span>
+                            <img 
+                            class="utrophy" style="float:right;height:5px;"
+                            src="../assets/img/dwn_arrow.png"
+                            />
+                           
+                     </button> 
+                      <div [hidden]="!row.showContactPopover" class="popover popover-box">
+                        <div class="popover-box-header">
+                          <div style="padding: 2%;margin-bottom:10px;">
+                            <span style="display: inline-block; padding-top: 6px;" (click)="open('content')"><img  src="../assets/img/mail.png" /></span>
+                            <span style="padding-left: 5%;padding-right: 5%;width: 300px;">jk@gmail.com </span> 
+                            <span class="copy_btn"  style="background-color: rgb(240 243 248);    color: #9fa6b5;">Copy</span>  
+                          </div>
+                          <div style="padding: 2%;">
+                            <span style="display: inline-block; padding-top: 6px;"><img  src="../assets/img/phn.png" /></span>
+                            <span style="padding-left: 5%;padding-right: 5%;width: 300px;">232323232323 </span> 
+                            <span class="copy_btn" style="background: rgba(223, 227, 235, 1);">Copy</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div> 
+                </div> 
+             </div>
+             
+          </li>
+          <li>
+            <div [hidden]="isTabletMode || isMobileView" style="color: #989AA3;font-size: 12px;font-family: Poppins;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 18px;
+            letter-spacing: 0px;
+            text-align: left;
+            min-width:180px;
+            ">
+              <div>{{row.date}}</div>
+              <div>{{row.time}}</div>
+              
+           </div>
+          </li>
+          <li class="like_dislike_container-minwidth">
+            <div class="dislike like_dislike_minwidth">
+              <span style="padding-right: 4%;padding:10%;" [hidden]="row.thumb2 == '0'"><img  src="../assets/img/thumb{{row.thumb2}}.svg"/></span>
+            </div>
+             <div class="like">
+              <span style="padding-right: 4%;padding:5%;" [hidden]="row.thumb1 == '0'"><img  src="../assets/img/thumb{{row.thumb1}}.svg"/></span>
+             </div>
+          </li>
+          <li class="m-0" [hidden]="isMobileView">
+            <div class="ex_award">
+              <span [hidden]="!(row.status == 'Award Offered')" class="award">{{row.status}}</span> 
+              <a [hidden]="!(row.status == 'Extend Award')" href="#" class="active">
+                <span class="sub_btn_font">Extend Award</span>
+              </a>
+              <a [hidden]="!(row.status == 'Extend Award1')" href="#">
+                <span class="sub_btn_font">Extend Award</span>
+              </a>
+              <div class="comment ">
+                <span [hidden]="!(row.status == 'Award Offered')" style="padding-left: 10%;"><img  src="../assets/img/msg.png"/></span>
+                
+               </div>
+                  
+           </div>
+          </li>
+
+        </ul>
+
+      </div>
+      <div [hidden]="!isMobileView" class="ex_award main_table_award_row">
+        <span [hidden]="!(row.status == 'Award Offered')" style="font-weight: 600;font-size: 14px; padding-left: 20px;">{{row.status}}</span> 
+        <a [hidden]="!(row.status == 'Extend Award')" href="#" class="active">
+          <span class="sub_btn_font">Extend Award</span>
+        </a>
+        <a [hidden]="!(row.status == 'Extend Award1')" href="#">
+          <span class="sub_btn_font">Extend Award</span>
+        </a>
+        <div class="comment " [hidden]="!(row.status == 'Award Offered')">
+          <span  style="padding-left: 10%;"><img  src="../assets/img/msg.png"/></span>
+          
+         </div>
+            
+     </div>
+    </div>
+
+
+    <div class="row d-none" *ngFor="let row of opportunitydetaillist ;let rowindex = index">
+     <div class="col-12 main_table_row" [ngClass]="{'' : isDesktopMode == true}" >
             
       <div class="sr_no">
         <p style="padding: 10px;">{{rowindex+1}}
         </p>
       </div>  
        <div class="img_tile">
-        <img class="image" style="border-radius: 8px;height: 65px;"  [ngClass]="{'mar-right-5': isMobileView == true}" src="../assets/img/{{row.submissionImage}}" />
+        <img class="image" style="border-radius: 8px;"  [ngClass]="{'mar-right-5': isMobileView == true}" src="../assets/img/{{row.submissionImage}}" />
           <div class="img_text">
-            <div style="padding: 0px 0px 3px 0px;"> {{row.submissionName}}</div>
-            <div style="padding: 0px 0px 3px 0px;color: #787878;">{{row.submissiondesc}}</div>
+            <div class="title"> {{row.submissionName}}</div>
+            <div class="subtitle">{{row.submissiondesc}}</div>
             <div [hidden]="isTabletMode || isDesktopMode" style="color: #989AA3;    font-size: 12px;">{{row.date}} {{row.time}}</div>
             <div [hidden]="row.submissioncontact == 'NA'">
               <div class="contact_btn" >
-                <button type="button" placement="bottom-left"
-                      [ngbPopover]="popContent" popoverTitle="">
+                <button type="button" placement="bottom-end"
+                       (click)="row.showContactPopover = !row.showContactPopover">
                       <span>{{row.submissioncontact}}</span>
                       <img 
                       class="utrophy" style="float:right;height:5px;"
@@ -127,41 +269,44 @@
                       />
                      
                </button> 
-                <ng-template #popContent>
+                <div [hidden]="!row.showContactPopover" class="popover" style="left:65px;position: absolute;padding: 1rem;
+                top: 0px;
+                will-change: transform;
+                transform: translate(0px, 32px);">
                   <div style="width: 250px; border: 0;">
                     <div style="padding: 2%;margin-bottom:10px;">
-                      <span style="display: inline-block;" (click)="open('content')"><img  src="../assets/img/mail.png" /></span>
+                      <span style="display: inline-block; padding-top: 6px;" (click)="open('content')"><img  src="../assets/img/mail.png" /></span>
                       <span style="padding-left: 5%;padding-right: 5%;width: 300px;">jk@gmail.com </span> 
                       <span class="copy_btn"  style="background-color: rgb(240 243 248);    color: #9fa6b5;">Copy</span>  
                     </div>
                     <div style="padding: 2%;">
-                      <span style="display: inline-block;"><img  src="../assets/img/phn.png" /></span>
+                      <span style="display: inline-block; padding-top: 6px;"><img  src="../assets/img/phn.png" /></span>
                       <span style="padding-left: 5%;padding-right: 5%;width: 300px;">232323232323 </span> 
                       <span class="copy_btn" style="background: rgba(223, 227, 235, 1);">Copy</span>
                     </div>
                   </div>
-                </ng-template>
+                </div>
               </div>
               
             </div> 
           </div> 
        </div>
-       <div [hidden]="isTabletMode || isMobileView" style="color: #989AA3;font-size: 12px;">
+       <div [hidden]="isTabletMode || isMobileView" style="color: #989AA3;font-size: 12px;margin-right: 90px;">
           <div>{{row.date}}</div>
           <div>{{row.time}}</div>
        </div>
-       <div class="dislike">
+       <div class="dislike" >
         <span style="padding-right: 2%;padding:10%;" [hidden]="row.thumb2 == '0'"><img  src="../assets/img/thumb{{row.thumb2}}.png"/></span>
       </div>
        <div class="like">
         <span style="padding-right: 2%;padding:5%;" [hidden]="row.thumb1 == '0'"><img  src="../assets/img/thumb{{row.thumb1}}.png"/></span>
        </div>
-       <div class="ex_award">
-          <span [hidden]="row.status != 'Award Offered'" style="font-weight: 600;font-size: 14px;">{{row.status}}</span>
-          <div [hidden]="row.status == 'Award Offered'" class="award_btn" >
-            Extend Award
-          </div>
-          <div class="comment">
+       <div class="ex_award" style="margin-left: 90px;" >
+          <span [hidden]="row.status != 'Award Offered'" class="award">{{row.status}}</span> 
+          <a [hidden]="row.status == 'Award Offered'" href="#" class="active">
+            <span class="sub_btn_font">Extend Award</span>
+          </a>
+          <div class="comment ">
             <span [hidden]="row.status != 'Award Offered'" style="padding-left: 10%;"><img  src="../assets/img/msg.png"/></span>
            </div>
               
@@ -171,4 +316,6 @@
        </div>
     </div>
    </section>
+
+   </div>
 </main>
